@@ -26,5 +26,5 @@ function draw() {
   emitter.run();
 
   repeller.show();
-  attractor.display();
+  attractor.show();
 }
