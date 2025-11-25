@@ -30,3 +30,25 @@ function draw() {
   repeller.show();
   attractor.show();
 }
+
+function mouseMoved() {
+  attractor.handleHover(mouseX, mouseY);
+  repeller.handleHover(mouseX, mouseY);
+}
+
+function mousePressed() {
+  attractor.handlePress(mouseX, mouseY);
+  repeller.handlePress(mouseX, mouseY);
+}
+
+function mouseDragged() {
+  attractor.handleHover(mouseX, mouseY);
+  repeller.handleHover(mouseX, mouseY);
+  attractor.handleDrag(mouseX, mouseY);
+  repeller.handleDrag(mouseX, mouseY);
+}
+
+function mouseReleased() {
+  attractor.stopDragging();
+  repeller.stopDragging();
+}
